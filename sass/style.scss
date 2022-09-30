@@ -10,14 +10,18 @@
 @import "base/buttons";
 @import "base/logo";
 @import "base/icons";
+@import "base/tags";
 
 //Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/columns";
+@import "layouts/footer";
 
 // Components
 @import "component/promo";
 @import "component/contact-us";
 @import "component/navigation";
 @import "component/tools";
+@import "component/strategies";
+@import "component/about";

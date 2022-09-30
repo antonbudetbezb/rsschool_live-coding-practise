@@ -2,4 +2,29 @@
     max-width: 462px;
     margin: auto;
     text-align: center;
+    margin-bottom: 70px;
+}
+
+.tool__header {
+    margin: 0;
+    margin-top: 30px;
+}
+
+//Tool block
+.tool__text {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.tools__button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.tools__wrapper {
+    background-image: url(../../img/backgrounds/bg\ tools.png);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
 }

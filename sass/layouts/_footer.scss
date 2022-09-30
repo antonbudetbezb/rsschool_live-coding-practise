@@ -1,0 +1,31 @@
+.footer__wrapper {
+    padding: 56px 0px 72px 0px;
+    display: flex;
+}
+
+.footer-navigation {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-left: 152px;
+}
+
+.footer-navigation__header {
+    margin-bottom: 15px;
+    @include font ($size: 2.0rem, $height: 3.0rem, $weight: 600)
+}
+
+.footer-navigation__links {
+    list-style: none;
+    padding: 0;
+    
+    a {
+        @extend %font-add;
+        @include font ($size: 1.6rem, $height: 3.5rem, $weight: 400);
+        text-decoration: none;
+        color: $color-text;
+        @extend %transition;
+        &:hover {
+            color: $color-brand;
+        }
+    }
+}
