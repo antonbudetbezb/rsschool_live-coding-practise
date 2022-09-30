@@ -10,9 +10,17 @@
 
 .promo__content {
     padding-right: 65px;
-    .promo__buttons {
-        * {
-            margin-right: 44px;
-        }
-    }
+}
+
+.promo__header {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.promo__text {
+    max-width: 487px;
+    @extend %font-add;
+    @include font ($size: 1.8rem, $weight: 400, $height:  2.8rem);
+    margin-top: 0px;
+    margin-bottom: 45px;
 }

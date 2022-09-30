@@ -1,0 +1,10 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+
+    &_play {
+        background-image: url('../../img/icons/watch-icon.svg');
+        width: 18px;
+        height: 19px;
+    }
+}

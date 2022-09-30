@@ -1,33 +1,44 @@
 .button {
-    font-family: 'Open sans', Verdana, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    @extend %transition;
+}
+
+.button {
+    @extend %font-primary;
+    @include font ($size: 1.6rem, $height: 2.2rem, $weight: 600);
     padding: 11px 25px 13px;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.3s;
-}
-.button_bordered {
-    background: $color-light;
-    border: 1px solid $color-border;
-    color: $color-text;
+
+    &_bordered {
+        background: $color-light;
+        border: 1px solid $color-border;
+        color: $color-text;
+        &:hover {
+            background: $color-light;
+            border: 1px solid $color-active-state;
+            color: $color-active-state;
+        }
+    }
+
+    &_colored {
+        background: $color-brand;
+        color: $color-light;
+        border: 1px solid $color-brand;
+        &:hover {
+            background: $color-active-state;
+            border-color: $color-active-state;
+        }
+    }
 }
 
-.button_colored {
-    background: $color-brand;
-    color: $color-light;
-    border: 1px solid $color-brand;
-}
+.link-button {
+    @extend %font-add;
+    color: $color-brand;
+    margin-left: 44px;
+    display: inline-flex;
+    align-items: center;
 
-.button_colored:hover {
-    background: $color-active-state;
-    border-color: $color-active-state;
-}
-
-.button_bordered:hover {
-    background: $color-light;
-    border: 1px solid $color-active-state;
-    color: $color-active-state;
+    .link-button__text {
+        margin-left: 9px;
+    }
 }

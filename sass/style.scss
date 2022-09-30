@@ -1,12 +1,23 @@
-@import "abstract/constants";
+@import "base/normalize";
 
+//Abstracts
+@import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixins";
+
+//Base elements
 @import "base/base";
 @import "base/buttons";
+@import "base/logo";
+@import "base/icons";
 
 //Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
+@import "layouts/columns";
 
 // Components
 @import "component/promo";
 @import "component/contact-us";
+@import "component/navigation";
+@import "component/tools";
