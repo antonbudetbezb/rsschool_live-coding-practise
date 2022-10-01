@@ -9,6 +9,7 @@
     padding: 0px 14px;
     border-radius: 90px;
     @include font ($size: 1.3rem, $height: 2.8rem, $weight: 400);
+    
 
     &_selected {
         background: $color-brand;

@@ -13,3 +13,9 @@
         color: $color-brand;
     }
 }
+
+.header__navigation {
+    @include media-tablet {
+        display: none;
+    }
+}

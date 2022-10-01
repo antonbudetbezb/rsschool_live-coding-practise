@@ -1,16 +1,20 @@
 .contant-us {
     background: $color-background;
     padding: 62px 82px;
+    @include media-tablet {
+        padding: 48px 0px;
+        text-align: center;
+    }
 }
 
 .contact-us__form {
     input, textarea {
-        border: 1px solid $color-light;
+        border: none;
         border-radius: 5px;
         background: $color-light;
         padding: 10px 21px;
         &:focus {
-            border-color: $color-brand;
+            outline: 2px solid $color-brand;
         }
     }
 
@@ -23,4 +27,10 @@
 
 .contact-us__line {
     margin-bottom: 19px;
+}
+
+.contant-us__container {
+    @include media-tablet {
+        flex-direction: column;
+    }   
 }

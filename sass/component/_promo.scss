@@ -1,15 +1,30 @@
 .promo {
     padding: 30px 0px 111px 0px;
+    overflow: hidden;
+    @include media-tablet {
+        padding: 0px 0px 78px 0px;
+    }@include media-mobile {
+        padding: 12px 0px 49px 0px;
+    }
 }
 
 .promo__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 .promo__content {
     padding-right: 65px;
+    @include media-tablet {
+        padding-right: 0px;
+    }
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .promo__header {
@@ -23,4 +38,43 @@
     @include font ($size: 1.8rem, $weight: 400, $height:  2.8rem);
     margin-top: 0px;
     margin-bottom: 45px;
+
+    @include media-tablet {
+        width: 380px;
+    }
+
+    @include media-mobile {
+        width: auto;
+        @include font ($size: 1.6rem, $weight: 400, $height:  2.4rem);
+        margin-bottom: 23px;
+    }
+}
+
+.promo__buttons {
+    display: flex;
+    align-items: center;
+    > * {
+        margin-right: 44px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    @include media-mobile {
+        flex-direction: column;
+        > * {
+            margin-right: 0px;
+            margin-bottom: 26px;
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.promo__image {
+    @include media-mobile {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
 }

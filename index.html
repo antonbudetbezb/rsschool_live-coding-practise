@@ -10,9 +10,14 @@
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-          <a href="#" class="logo_link">
-            <object data="./img/icons/Logo.svg" type="image/svg+xml" class="logo-object"></object>
-          </a>
+            <div class="header__logo-line">
+                <span class="hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+                <a href="#" class="logo_link">
+                  <object data="./img/icons/Logo.svg" type="image/svg+xml" class="logo-object"></object>
+                </a>
+            </div>
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__li">Home</li>
@@ -42,13 +47,13 @@
                         </a>
                     </div>
                 </div>
-                <img src="./img/promo/main.jpg" alt="Promo background">
+                <img src="./img/promo/main.png" alt="Promo background" class="promo__image">
             </div>
         </section>
         <section class="tools">
             <div class="wrapper tools__wrapper">
                 <h2 class="tools__title">We design tools to unveil your superpowers</h2>
-                <div class="layout-4-columns">
+                <div class="layout-4-columns tool__container">
                     <div class="tool">
                         <div class="tool__icon">
                             <span class="icon-squared icon-squared_violent">
@@ -105,7 +110,7 @@
                 </div>
                 <div class="layout-3-columns strategy-wrapper">
                     <div class="strategy block-shadowed">
-                        <img src="./img/strategies/1.jpg" alt="Strategy">
+                        <img src="./img/strategies/1.jpg" alt="Strategy" class="strategy_image">
                         <div class="strategy__content">
                             <h3 class="startegy__header">Increasing Prosperity With Positive Thinking</h3>
                             <div class="tags">
@@ -115,7 +120,7 @@
                         </div>
                     </div>
                     <div class="strategy block-shadowed">
-                        <img src="./img/strategies/2.jpg" alt="Strategy">
+                        <img src="./img/strategies/2.jpg" alt="Strategy" class="strategy__image">
                         <div class="strategy__content">
                             <h3 class="startegy__header">Motivation Is The First Step To Success</h3>
                             <div class="tags">
@@ -225,7 +230,7 @@
         <section class="contant-us">
             <div class="wrapper">
                 <h2>Contact Us</h2>
-                <div class="layout-2-columns">
+                <div class="layout-2-columns contant-us__container">
                     <div class="contact-us__content">
                         <p>
                             Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog.

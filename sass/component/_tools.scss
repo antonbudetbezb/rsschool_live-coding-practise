@@ -8,17 +8,26 @@
 .tool__header {
     margin: 0;
     margin-top: 30px;
+    @include media-tablet {
+        margin-top: 20px;
+    }
 }
 
 //Tool block
 .tool__text {
     margin: 0;
     margin-top: 16px;
+    @include media-tablet {
+        margin-top: 6px;
+    }
 }
 
 .tools__button {
     margin-top: 60px;
     text-align: center;
+    @include media-tablet {
+        margin: 0px;
+    }
 }
 
 .tools__wrapper {
@@ -27,4 +36,27 @@
     background-size: 100%;
     background-repeat: no-repeat;
     padding-bottom: 90px;
+}
+
+.tool__container {
+    @include media-tablet {
+        flex-wrap: wrap;
+        .tool {
+            text-align: center;
+            flex-basis: 44%;
+            margin-bottom: 54px;
+        }
+    }
+
+    @include media-mobile {
+        flex-wrap: wrap;
+        .tool {
+            text-align: center;
+            flex-basis: 100%;
+            margin-bottom: 47px;
+            &:last-child {
+                margin-bottom: 38px;
+            }
+        }
+    }
 }
