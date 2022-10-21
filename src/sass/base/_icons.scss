@@ -1,0 +1,55 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+
+    &_play {
+        background-image: url('../../img/icons/arrow.svg');
+        width: 18px;
+        height: 19px;
+    }
+
+    &_arrow {
+        background-image: url('../../img/icons/arrow.svg');
+        width: 12px;
+        height: 17px;
+    }
+
+    &_curve {
+        background-image: url('../../img/icons/curve.svg');
+        width: 18px;
+        height: 14px;
+    }
+
+    &_heart {
+        background-image: url('../../img/icons/heart.svg');
+        width: 17px;
+        height: 15px;
+    }
+
+    &_watches {
+        background-image: url('../../img/icons/glass-watches.svg');
+        width: 15px;
+        height: 17px;
+    }
+}
+
+.icon-squared {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    &_violent {
+        background: $color-violent;
+    }
+    &_orange {
+        background: $color-orange;
+    }
+    &_red {
+        background: $color-red;
+    }
+    &_blue {
+        background: $color-blue;
+    }
+}
